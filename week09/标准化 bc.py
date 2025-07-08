@@ -1,5 +1,5 @@
 """
-陈小虎
+Bulimaole
 标准化
 """
 import numpy as np
