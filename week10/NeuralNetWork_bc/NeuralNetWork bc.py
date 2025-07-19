@@ -111,7 +111,7 @@ for record in test_data_list:
     #预处理数字图片
     input = (numpy.asfarray(all_values[1:])) / 255.0 * 0.99 + 0.01
     #让网络判断图片对应的数字
-    outputs = n.query(inputs)
+    outputs = n.query(input)
     #找到数值最大的神经元对应的编号
     label = numpy.argmax(outputs)
     print("网络认为图片的数字是：", label)
